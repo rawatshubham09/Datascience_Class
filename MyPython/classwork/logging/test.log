@@ -1,0 +1,9 @@
+2021-12-13 01:23:10,945 I am Going to Start My Program
+2021-12-13 01:23:11,651 This is a first warning to my program
+2021-12-13 01:23:12,357 This is a error message
+2021-12-13 01:24:57,232 Error has Occure
+2021-12-13 01:24:57,232 division by zero
+Traceback (most recent call last):
+  File "C:\Users\Shubham\AppData\Local\Temp/ipykernel_11540/137431758.py", line 5, in div
+    return a/b
+ZeroDivisionError: division by zero
