@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Boaston House Prediction</title>
+    <style>
+        .myBody {
+                    background-color : azure
+                  }
+
+        .myDiv {
+                  border: 5px outset red;
+                  background-color: lightblue;
+                  text-align: center;
+                }
+        .myH1Tag {
+                    height: 50px;
+                    text-align : center;
+                    color:red;
+                  }
+
+    </style>
+</head>
+<body class="myBody">
+    <h1 class="myH1Tag">Prediction Result</h1>
+    <br><br>
+    <div class="myDiv">
+
+        <h3>Model Predicted value is  : {{ Answer }} </h3>
+    </div>
+    <a href="{{ url_for('home') }}">Home Page</a>
+</body>

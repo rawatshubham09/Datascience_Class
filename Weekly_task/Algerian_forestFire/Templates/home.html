@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Algeria Forest Fire</title>
+
+    <style>
+        .myBody {
+                    background-color : azure
+                  }
+
+        .myDiv {
+                  border: 5px outset red;
+                  background-color: lightblue;
+                  text-align: center;
+                }
+        .myHtag {
+
+                text-align : center;
+                color : green
+                }
+        .myH1Tag {
+                    height: 50px;
+                    text-align : center;
+                    color:red;
+                  }
+    </style>
+</head>
+<body class="myBody">
+    <br/>
+    <h1 class="myH1Tag">Algerian Forest Fire Prediction</h1>
+    <br/><br/>
+    <h3 class="myHtag">Enter Following Information to Predict value:</h3>
+    <div class="myDiv">
+    <form method="POST" action="{{ url_for( 'Form_page' ) }}">
+        <div>
+
+            <label for="FFMC">Fine Fuel Moisture Code </label><br>
+            <input type="str" id="FFMC" name="FFMC" placeholder="btw( 28.6 to 92.5 )"><br><br>
+
+            <label for="ISI">Initial Spread Index </label><br>
+            <input type="str" id="ISI" name="ISI"  placeholder=" 0 to 18.5 "><br><br>
+
+            <label for="BUI">Buildup Index </label><br>
+            <input type="str" id="BUI" name="BUI" placeholder=" 1.1 to 68 "><br><br>
+
+            <label for="FWI">Fire Weather Index </label><br>
+            <input type="str" id="FWI" name="FWI" placeholder="0 to 31.1"><br><br>
+
+            <input type="submit" value="Submit">
+        </div>
+    </form>
+    </div>
+</body>
+</html>
